@@ -717,12 +717,14 @@ Uninstall_SSR(){
 		if [[ -z "${now_mode}" ]]; then
 			port=`${jq_file} '.server_port' ${config_user_file}`
 			Del_iptables
+			Save_iptables
 		else
 			user_total=`${jq_file} '.port_password' ${config_user_file} | sed '$d' | sed "1d" | wc -l`
 			for((integer = 1; integer <= ${user_total}; integer++))
 			do
 				port=`${jq_file} '.port_password' ${config_user_file} | sed '$d' | sed "1d" | awk -F ":" '{print $1}' | sed -n "${integer}p" | sed -r 's/.*\"(.+)\".*/\1/'`
 				Del_iptables
+				Save_iptables
 			done
 		fi
 		if [[ ${release} = "centos" ]]; then
