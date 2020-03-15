@@ -3,7 +3,7 @@
 
 surge_ruleset=DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
 surge_ruleset=🛑 自定义-广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-surge_ruleset=🛑 自定义-广告拦截,rules/ConnersHua/Surge/Ruleset/Hijacking.list
+;surge_ruleset=🛑 自定义-广告拦截,rules/ConnersHua/Surge/Ruleset/Hijacking.list
 surge_ruleset=🎥 分流-NETFLIX,rules/ConnersHua/Surge/Ruleset/Media/Netflix.list
 surge_ruleset=🎥 分流-NETFLIX,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list
 surge_ruleset=📺 分流-流媒体,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/GlobalTV.list
